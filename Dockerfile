@@ -2,10 +2,6 @@
 FROM golang:1.20 AS builder
 WORKDIR /app
 
-# Copy Go module files and download dependencies
-COPY go.mod go.sum ./
-RUN go mod tidy
-
 # Copy application source code
 COPY . .
 
