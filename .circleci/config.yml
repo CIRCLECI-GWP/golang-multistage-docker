@@ -14,7 +14,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - setup_remote_docker:
+      - setup_remote_docker
       - checkout
       - run:
           name: Build and Tag Docker Image
